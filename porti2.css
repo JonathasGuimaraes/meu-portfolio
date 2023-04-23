@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
+
+:root{ --green:#67f10c;
+}
+*{
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border:none ;
+text-transform: capitalize;
+transition: all .2s linear ;
+}
+*::selection{
+  background: var(--green);
+  color: #333;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html ::-webkit-scrollbar{
+width: 1.4rem;
+}
+html ::-webkit-scrollbar-track{
+  background: #222;
+  }
+  html ::-webkit-scrollbar-thumb{
+    background: var(--green);
+    }
+    body{
+      background: #111;
+      overflow-x: hidden;
+      padding-left: 35rem;
+    }
+    section{
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .btn{
+      padding: .7rem 3rem;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-size: 2rem;
+      border-radius: 2rem;
+    }
+    .btn i{
+      padding: 0 .5rem;
+      font-size: 1.8rem;
+    }
+    .btn:hover{
+     background:var(--green);
+    }
+    .btn .enviar{
+      background:var(--green);;
+     }
+    .header{
+      text-align: center;
+      margin: 0 6rem;
+      font-size: 4rem;
+      padding: 1rem;
+      border-bottom: .1rem solid #fff4;
+      color: #fff;
+    }
+    .header span{
+      color: var(--green);
+
+    }
+    header{
+      position: fixed;
+      top: 0; 
+      left: 0;
+      z-index: 1000;
+      height: 100%;
+      width: 35rem;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      text-align: center;
+    }
+    header .user img{
+      height: 18rem;
+      width: 18rem;
+      border-radius: 30%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border:  .7rem solid var(--green);
+    }
+    header  .user  .nome{
+      font-size: 3.5rem;
+      color: #fff;
+    }
+    header  .user  .sobre{
+      font-size: 2rem;
+      color: #eee;
+    }
+    header  .navbar{
+      width: 100%;
+    } 
+    header .navbar ul{
+      list-style: none;
+      padding: 1rem 3rem;  
+    }
+    header .navbar  ul li a{
+      display: block;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      background: #333;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5rem;
+    }
+    header .navbar  ul li a:hover{
+      background: var(--green);
+    }
+    header .h3 .nome::placeholder{
+      text-transform: none;
+      text-transform: uppercase;
+    }
+  /*  #menu {
+      position: fixed;
+      top: 2rem; 
+      right: 2rem;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      font-size: 2.5rem;
+      padding: 1rem  1.5rem;
+      z-index: 1000;
+      display: none;
+      list-style: none;
+    }*/
+ .inicio{
+      display: flex;
+      justify-content: center;
+      flex-flow:column;
+      padding: 0 15rem;
+    }
+  
+    .inicio h3{
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    .inicio h1{
+      font-size:5rem;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .inicio h1 span{
+      color: var(--green);
+    }
+    .inicio p{
+      font-size:2rem;
+      color: #eee;
+      padding: 1rem 0;
+    }
+    .sobre .linha{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+    .sobre .linha .info{
+      flex: 1 1 48rem;
+      padding: 2rem 1rem;
+      padding-left: 6rem;
+    }
+    .sobre .linha .info h3{
+      font-size: 2rem;
+      color: var(--green);
+      padding: 1rem 0;
+      font-weight: normal;
+    }
+    .sobre .linha  .info h3 span{
+      color: #eee;
+      padding: 0 .5rem;
+    }
+    .sobre .linha {
+      flex: 1 1 48rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .sobre .linha  .educa{
+      width: 30rem;
+      background: #222;
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem;
+    }
+    .sobre .linha  .educa span{
+      font-size: 4rem;
+      color: var(--green);
+    }
+    .sobre .linha  .educa h3{
+      font-size: 2rem;
+      color: #fff;
+    }
+    .educação .educa-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      padding-left: 3rem;
+    }
+    .educação .educa-container .educa{
+      width: 30rem;
+      margin: 4rem 1rem;
+      padding-left: 4rem;
+      border-left:.2rem solid #fff;
+      position: relative;
+    }
+    .educação .educa-container .educa span{
+      font-size: 1.3rem;
+      background: #222;
+      color: #fff;
+      border-radius: 5rem;
+      padding: 5rem 2.5rem;
+    }
+    .educação .educa-container .educa h3{
+      font-size: 2rem;
+      color:#fff;
+      padding-top: 1.5rem;
+    }
+    .educação .educa-container .educa i{
+      position: absolute;
+      color: #fff;
+     top: -1.5rem; left: -2.5rem;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      line-height: 5rem;
+      text-align: center;
+      font-size: 2rem;
+      background: var(--green);
+    }
+    .educação .educa-container .educa p{
+      font-size: 4rem;
+      color: #eee;
+      padding: 1rem 0;
+    }
+    .educação .linha .item h3{
+      font-size: 2rem;
+      color: var(--green);
+      padding: 1rem 0;
+      font-weight: normal;
+    }
+  .educação .linha .item p{
+      font-size: 1rem;
+      color: #eee;
+      padding: 1rem 0;
+    }
+    .educação .item img{
+      height: 20rem;
+      width: 20rem;
+      border-radius: 20%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border:  .2rem solid var(--green);
+    } 
+    .portfolio .linha .item h3{
+      font-size: 2rem;
+      color: var(--green);
+      padding: 1rem 0;
+      font-weight: normal;
+    }
+  .portfolio .linha .item p{
+      font-size: 1rem;
+      color: #eee;
+      padding: 1rem 0;
+    }
+    .portfolio .item img{
+      height: 20rem;
+      width: 20rem;
+      border-radius: 20%;
+      object-fit: cover;
+      margin-bottom: 3rem;
+      border:  .3rem solid #c71313;
+    } 
+    .contato .linha {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contato .linha .item{
+     flex: 1 1 30rem;
+     padding: 4rem;
+     padding-bottom: 0;
+    }
+    .contato .linha .form{
+      flex: 1 1 45rem;
+      padding: 2rem;
+      margin: 2rem;
+      margin-bottom: 4rem;
+     }
+     .contato .linha form .box{
+      padding: 1.5rem;
+      margin: 1rem 0;      
+      background: #3333;
+      color: #fff;
+      text-transform: none;
+      font-size: 1.0rem;
+      width: 100%;
+     }
+     .contato .linha form .box::placeholder{
+      text-transform: capitalize;
+
+     }
+     .contato .linha form .message{
+      height: 10rem;
+      resize: none;
+
+     }
+     .contato .linha .item .titulo{
+      text-transform: uppercase;
+      color: #eee;
+      padding: 0rem;
+      padding-bottom: 2rem;
+     }
+     .contato .linha .item .info h3{
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      color: #eee;
+      padding: 1rem 0;
+      font-weight: normal;
+     }
+     .contato .linha .item .info h3 i{
+      padding-right: 1rem;
+      color:var(--green) ;
+
+     }
+     .contato .linha .item .info h1{
+      font:1.0em;
+     color: #fff;
+     }
+     
+     .top{
+      position: fixed;
+      bottom: 7.5rem;
+      right: 2rem;
+      display:none;
+      z-index: 100;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    @media (max-width:1200px) {
+
+      html{
+        font-size: 55%;
+      }
+      .inicio{
+        padding:1rem 4rem;
+      }
+    }
+@media (max-width:961px) {
+
+      header{
+        left: -120%;
+      }
+      #menu{
+        display: block;
+        
+     }
+     
+    
+     header.user{
+     left: 0%;
+     }
+    body{
+    padding: 0;
+    }
+}
+@media (max-width: 720px) {
+    html{
+      font-size: 50%;
+    }
+@media (max-width: 500px) {
+    header{
+     width: 100vw;
+    }
+}
+@media (max-width: 400px){
+    header{
+      width: 100vw; 
+    }
+    .titulo{
+      margin: 0 3rem;
+    }
+   .sobre .linha .contato .educa{
+      width: 100%;
+   }
+   .educação .educa .contato .educa{
+      width: 100%;
+    }
+    .contato .linha form{
+      margin:2rem 0 ;
+    }
+}
+}
