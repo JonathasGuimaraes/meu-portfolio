@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
 
-:root{ --green:#67f10c;
+:root{ --green:#7eec36;
 }
 *{
 font-family: sans-serif;
@@ -15,7 +15,7 @@ transition: all .2s linear ;
 }
 *::selection{
   background: var(--green);
-  color: #333;
+  color: #6a6969;
 }
 html{
   font-size: 62.5%;
@@ -25,13 +25,13 @@ html ::-webkit-scrollbar{
 width: 1.4rem;
 }
 html ::-webkit-scrollbar-track{
-  background: #222;
+  background: #2b2c2c;
   }
   html ::-webkit-scrollbar-thumb{
     background: var(--green);
     }
     body{
-      background: #111;
+      background: #011930;
       overflow-x: hidden;
       padding-left: 35rem;
     }
@@ -254,16 +254,26 @@ html ::-webkit-scrollbar-track{
       font-weight: normal;
     }
   .educação .linha .item p{
-      font-size: 1rem;
+      margin-bottom: 3rem;
       color: #eee;
-      padding: 1rem 0;
-    }
-    .educação .item img{
-      height: 20rem;
+      height: 10rem;
       width: 20rem;
       border-radius: 20%;
+      object-fit: cover;    
+    }
+    .educação .linha .item td{
+      color: #eee;
+      height: 1rem;
+      width: 30rem;
+      border-radius: 10%;
+      object-fit: cover;    
+    }
+    .educação .item img{
+      height: 25rem;
+      width: 25rem;
+      border-radius: 20%;
       object-fit: cover;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       border:  .2rem solid var(--green);
     } 
     .portfolio .linha .item h3{
@@ -272,14 +282,21 @@ html ::-webkit-scrollbar-track{
       padding: 1rem 0;
       font-weight: normal;
     }
-  .portfolio .linha .item p{
+  .portfolio .linha .item  p{
       font-size: 1rem;
       color: #eee;
       padding: 1rem 0;
     }
+    .portfolio .linha .item td{
+      color: #eee;
+      height: 1rem;
+      width: 30rem;
+      border-radius: 10%;
+      object-fit: cover;    
+    }
     .portfolio .item img{
-      height: 20rem;
-      width: 20rem;
+      height: 25rem;
+      width: 25rem;
       border-radius: 20%;
       object-fit: cover;
       margin-bottom: 3rem;
@@ -305,7 +322,7 @@ html ::-webkit-scrollbar-track{
      .contato .linha form .box{
       padding: 1.5rem;
       margin: 1rem 0;      
-      background: #3333;
+      background: #46464633;
       color: #fff;
       text-transform: none;
       font-size: 1.0rem;
@@ -329,7 +346,7 @@ html ::-webkit-scrollbar-track{
      .contato .linha .item .info h3{
       display: flex;
       align-items: center;
-      font-size: 2rem;
+      font-size: 4rem;
       color: #eee;
       padding: 1rem 0;
       font-weight: normal;
