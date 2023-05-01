@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
 
-:root{ --green:#7eec36;
+:root{ --green:#67f10c;
 }
 *{
 font-family: sans-serif;
@@ -15,7 +15,7 @@ transition: all .2s linear ;
 }
 *::selection{
   background: var(--green);
-  color: #6a6969;
+  color: #333;
 }
 html{
   font-size: 62.5%;
@@ -25,13 +25,13 @@ html ::-webkit-scrollbar{
 width: 1.4rem;
 }
 html ::-webkit-scrollbar-track{
-  background: #2b2c2c;
+  background: #222;
   }
   html ::-webkit-scrollbar-thumb{
     background: var(--green);
     }
     body{
-      background: #011930;
+      background: #111;
       overflow-x: hidden;
       padding-left: 35rem;
     }
@@ -254,49 +254,41 @@ html ::-webkit-scrollbar-track{
       font-weight: normal;
     }
   .educação .linha .item p{
-      margin-bottom: 3rem;
+      font-size: 1rem;
       color: #eee;
-      height: 10rem;
-      width: 20rem;
-      border-radius: 20%;
-      object-fit: cover;    
-    }
-    .educação .linha .item td{
-      color: #eee;
-      height: 1rem;
-      width: 30rem;
-      border-radius: 10%;
-      object-fit: cover;    
+      padding: 1rem 0;
     }
     .educação .item img{
-      height: 25rem;
-      width: 25rem;
+      height: 20rem;
+      width: 20rem;
       border-radius: 20%;
       object-fit: cover;
-      margin-bottom: 0rem;
+      margin-bottom: 1rem;
       border:  .2rem solid var(--green);
-    } 
-    .portfolio .linha .item h3{
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    img {
+      margin-right: 30px; /* Adiciona 30 pixels de margem à direita da imagem */
+    }
+    
+    .portfolio .linha  h3{
       font-size: 2rem;
       color: var(--green);
       padding: 1rem 0;
       font-weight: normal;
     }
-  .portfolio .linha .item  p{
+  .portfolio .linha  p{
       font-size: 1rem;
       color: #eee;
       padding: 1rem 0;
     }
-    .portfolio .linha .item td{
-      color: #eee;
-      height: 1rem;
-      width: 30rem;
-      border-radius: 10%;
-      object-fit: cover;    
-    }
     .portfolio .item img{
-      height: 25rem;
-      width: 25rem;
+      height: 20rem;
+      width: 20rem;
       border-radius: 20%;
       object-fit: cover;
       margin-bottom: 3rem;
@@ -308,10 +300,21 @@ html ::-webkit-scrollbar-track{
       justify-content: center;
       flex-wrap: wrap;
     }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    img {
+      margin-right: 30px; /* Adiciona 30 pixels de margem à direita da imagem */
+    }
     .contato .linha .item{
      flex: 1 1 30rem;
      padding: 4rem;
      padding-bottom: 0;
+    }
+    text .style{
+      margin-left: 20px;
     }
     .contato .linha .form{
       flex: 1 1 45rem;
@@ -322,7 +325,7 @@ html ::-webkit-scrollbar-track{
      .contato .linha form .box{
       padding: 1.5rem;
       margin: 1rem 0;      
-      background: #46464633;
+      background: #3333;
       color: #fff;
       text-transform: none;
       font-size: 1.0rem;
@@ -346,7 +349,7 @@ html ::-webkit-scrollbar-track{
      .contato .linha .item .info h3{
       display: flex;
       align-items: center;
-      font-size: 4rem;
+      font-size: 2rem;
       color: #eee;
       padding: 1rem 0;
       font-weight: normal;
