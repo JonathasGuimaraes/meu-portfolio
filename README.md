@@ -1,3 +1,3 @@
 # meu-portfolio
 
-Aida esta simples com imagens para ajustar mais está tudo funcinando. 
+Aida esta simples com imagens para ajustar. 
